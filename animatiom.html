@@ -2,9 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>jsanimatiom</title>
+   <style>
+       #center{
+           width: 150px;
+           height: 400px;
+           background: thistle;
+           position: absolute;
+           left: -150px;
+           top: 100px;
+       }
+       #liter{
+           width: 30px;
+           height: 90px;
+           position: absolute;
+           top: 155px;
+           right: -30px;
+           background: rosybrown;
+       }
+       #ul_center{
+           padding: 0;
+           margin: 0;
+           list-style-type: none;
+
+       }
+       #ul_center>li{
+           width: 150px;
+           height: 100px;
+           background: antiquewhite;
+           text-align: center;
+           line-height: 150px;
+           cursor:pointer;
+       }
+       #ul_center>li:hover{
+           background: aquamarine;
+       }
+   </style>
 </head>
 <body>
-
+<div id="center">
+    <div id="liter">点我分享</div>
+    <ul id="ul_center">
+        <li>QQ</li>
+        <li>微信</li>
+        <li>微博</li>
+        <li>贴吧</li>
+    </ul>
+</div>
 </body>
+<script>
+    var str=function (id){
+        return document.getElementById(id);
+    };
+    var gleat=str("center");
+    function cod(obj,attr){
+       if(document.all){
+           return parseInt(obj.currentStyle[attr]);
+       }
+        else {
+           return parseInt(getComputedStyle(obj,false)[attr]);
+       }
+    }
+
+    gleat.addEventListener("mouseover",function(){
+        fond();
+    },true);
+      var timer=null;
+       function fond(){
+         clearTimeout(time);
+        clearTimeout(timer);
+        timer=setInterval(function (){
+            var sty=cod(gleat,"left");
+            if(sty<0){
+                sty +=10;
+            }
+            gleat.style.left=sty+"px";
+            console.log(111)
+        },17)
+    }
+
+
+    gleat.addEventListener("mouseout",function(){
+        fend();
+    },true);
+    var time=null;
+    function fend(){
+        clearTimeout(timer);
+        clearTimeout(time);
+        time=setInterval(function (){
+            var sty=cod(gleat,"left");
+            if(sty>-150){
+                sty -=10;
+            }
+            gleat.style.left=sty+"px";
+            console.log(222)
+        },17)
+    }
+</script>
 </html>
