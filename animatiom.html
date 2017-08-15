@@ -65,38 +65,59 @@
     }
 
     gleat.addEventListener("mouseover",function(){
-        fond();
+        fond(this,0,10);
     },true);
-      var timer=null;
-       function fond(){
-         clearTimeout(time);
-        clearTimeout(timer);
-        timer=setInterval(function (){
-            var sty=cod(gleat,"left");
-            if(sty<0){
-                sty +=10;
-            }
-            gleat.style.left=sty+"px";
-            console.log(111)
-        },17)
-    }
-
-
     gleat.addEventListener("mouseout",function(){
-        fend();
+        fond(this,-150,-10);
     },true);
     var time=null;
-    function fend(){
-        clearTimeout(timer);
-        clearTimeout(time);
-        time=setInterval(function (){
-            var sty=cod(gleat,"left");
-            if(sty>-150){
-                sty -=10;
+    function  fond(obj,origin,destination){
+        obj.timer=null;
+        clearTimeout(gleat.timer);
+        obj.timer= setInterval(function(){
+            obj=cod(obj,"left")
+            if(obj<origin){
+                if(obj<origin){
+                 obj +=destination;
+                }
+            else if(obj>origin){
+                obj +=destination;
+               }
             }
-            gleat.style.left=sty+"px";
-            console.log(222)
+            gleat.style.left=obj+"px"
         },17)
     }
+
+//      var timer=null;
+//       function fond(){
+//         clearTimeout(time);
+//        clearTimeout(timer);
+//        timer=setInterval(function (){
+//            var sty=cod(gleat,"left");
+//            if(sty<0){
+//                sty +=10;
+//            }
+//            gleat.style.left=sty+"px";
+//            console.log(111)
+//        },17)
+//    }
+//
+//
+//    gleat.addEventListener("mouseout",function(){
+//        fend();
+//    },true);
+//    var time=null;
+//    function fend(){
+//        clearTimeout(timer);
+//        clearTimeout(time);
+//        time=setInterval(function (){
+//            var sty=cod(gleat,"left");
+//            if(sty>-150){
+//                sty -=10;
+//            }
+//            gleat.style.left=sty+"px";
+//            console.log(222)
+//        },17)
+//    }
 </script>
 </html>
