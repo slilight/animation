@@ -26,9 +26,12 @@
       <file leaf-file-name="animatiom.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/animatiom.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6897767">
-              <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
-              <folding />
+            <state vertical-scroll-proportion="0.45710927">
+              <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+              <folding>
+                <element signature="e#1109#1160#0" expanded="false" />
+                <element signature="e#1224#1404#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,8 +39,8 @@
       <file leaf-file-name="animation_1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../新建文件夹/animation/animation_1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.214286">
-              <caret line="97" column="38" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
+            <state vertical-scroll-proportion="-13.190476">
+              <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -58,6 +61,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/../新建文件夹/animation/animation_1.html" />
         <option value="$PROJECT_DIR$/animatiom.html" />
       </list>
     </option>
@@ -217,17 +221,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../新建文件夹/animation/animation_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.214286">
-          <caret line="97" column="38" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
+        <state vertical-scroll-proportion="-13.190476">
+          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/animatiom.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6897767">
-          <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
-          <folding />
+        <state vertical-scroll-proportion="0.45710927">
+          <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+          <folding>
+            <element signature="e#1109#1160#0" expanded="false" />
+            <element signature="e#1224#1404#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

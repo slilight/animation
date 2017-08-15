@@ -54,8 +54,8 @@
     var str=function (id){
         return document.getElementById(id);
     };
-    var gleat=str("center");
-    function cod(obj,attr){
+     var gleat=str("center");
+    function gainStyle(obj,attr){
        if(document.all){
            return parseInt(obj.currentStyle[attr]);
        }
@@ -65,59 +65,30 @@
     }
 
     gleat.addEventListener("mouseover",function(){
-        fond(this,0,10);
+        moving(10,0);
     },true);
     gleat.addEventListener("mouseout",function(){
-        fond(this,-150,-10);
+        moving(-10,-150);
     },true);
-    var time=null;
-    function  fond(obj,origin,destination){
-        obj.timer=null;
-        clearTimeout(gleat.timer);
-        obj.timer= setInterval(function(){
-            obj=cod(obj,"left")
-            if(obj<origin){
-                if(obj<origin){
-                 obj +=destination;
+    gleat.timer=null;
+    function moving(speed,terminal){
+        clearInterval(gleat.timer);
+        gleat.timer= setInterval(function(){
+            var sty=gainStyle(gleat,"left");
+
+            if(sty<terminal){
+                if(sty<terminal){
+                    sty +=speed;
                 }
-            else if(obj>origin){
-                obj +=destination;
-               }
+            }else{
+                if(sty>terminal){
+                    sty += speed;
+                }
             }
-            gleat.style.left=obj+"px"
+
+
+            gleat.style.left=sty+"px"
         },17)
     }
-
-//      var timer=null;
-//       function fond(){
-//         clearTimeout(time);
-//        clearTimeout(timer);
-//        timer=setInterval(function (){
-//            var sty=cod(gleat,"left");
-//            if(sty<0){
-//                sty +=10;
-//            }
-//            gleat.style.left=sty+"px";
-//            console.log(111)
-//        },17)
-//    }
-//
-//
-//    gleat.addEventListener("mouseout",function(){
-//        fend();
-//    },true);
-//    var time=null;
-//    function fend(){
-//        clearTimeout(timer);
-//        clearTimeout(time);
-//        time=setInterval(function (){
-//            var sty=cod(gleat,"left");
-//            if(sty>-150){
-//                sty -=10;
-//            }
-//            gleat.style.left=sty+"px";
-//            console.log(222)
-//        },17)
-//    }
 </script>
 </html>
