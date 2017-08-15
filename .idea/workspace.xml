@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7bedda5-8ab9-4c0c-a1c1-1c70c59ec424" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/animatiom.html" afterPath="$PROJECT_DIR$/animatiom.html" />
     </list>
     <ignored path="animation.iws" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="animatiom.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/animatiom.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45710927">
-              <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.426557">
+              <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
               <folding>
                 <element signature="e#1109#1160#0" expanded="false" />
                 <element signature="e#1224#1404#0" expanded="false" />
@@ -229,8 +230,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/animatiom.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45710927">
-          <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.426557">
+          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
           <folding>
             <element signature="e#1109#1160#0" expanded="false" />
             <element signature="e#1224#1404#0" expanded="false" />
